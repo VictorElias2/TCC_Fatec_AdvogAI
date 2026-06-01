@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso e Transparência de Dados | AdvogAI</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 12px 24px;
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-link.active {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        .content-section {
+            display: none;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            margin-top: 30px;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .meta-date {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .highlight-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #1e40af;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+            .content-section {
+                padding: 20px;
+            }
+            .nav-tabs {
+                flex-direction: column;
+                align-items: center;
+                border-bottom: none;
+            }
+            .nav-link {
+                border-bottom: none;
+                margin-bottom: 5px;
+            }
+            .nav-link.active {
+                background: #edf2f7;
+                border-radius: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+             <img src="logo.png" alt="Logo da AdvogAI" width="50%"> 
+            <ul class="nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="switchTab(event, 'termos')">Termos de Uso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="switchTab(event, 'transparencia')">Transparência de Dados</a>
+                </li>
+            </ul>
+        </header>
+
+        <!-- ABA: TERMOS DE USO -->
+        <main id="termos" class="content-section active">
+            <h1>Termos de Uso</h1>
+            <div class="meta-date">Última atualização: 20 de maio de 2026</div>
+
+            <p>Seja bem-vindo ao <strong>AdvogAI</strong>. Ao acessar ou utilizar nossa plataforma, você concorda em cumprir e vincular-se aos seguintes Termos de Uso. Se você não concordar com qualquer parte destes termos, não deverá utilizar nossos serviços.</p>
+
+            <h2>1. Objeto do Serviço</h2>
+            <p>O AdvogAI é uma plataforma baseada em Inteligência Artificial projetada para auxiliar na análise, triagem, redação preliminar de peças e consulta de informações jurídicas. O ecossistema visa otimizar a produtividade de profissionais do Direito e estudantes.</p>
+
+            <h2>2. Isenção de Responsabilidade Jurídica (Disclaimer Crítico)</h2>
+            <div class="highlight-box">
+                <p><strong>Atenção:</strong> O AdvogAI não é um advogado e não presta assessoria jurídica formal. As respostas, minutas, resumos e análises geradas pela IA são ferramentas de suporte e não substituem o parecer, a validação e a assinatura de um advogado devidamente inscrito na Ordem dos Advogados do Brasil (OAB).</p>
+            </div>
+            <ul>
+                <li><strong>Responsabilidade Técnica:</strong> O usuário profissional do Direito retém a responsabilidade técnica integral sobre qualquer peça, parecer ou orientação fundamentada com o auxílio do AdvogAI.</li>
+                <li><strong>Risco de Alucinação:</strong> Ferramentas de IA generativa podem, eventualmente, apresentar imprecisões ou informações desatualizadas. É dever obrigatório do usuário revisar e validar todas as bases legais, jurisprudências e citações fornecidas pela plataforma.</li>
+            </ul>
+
+            <h2>3. Cadastro e Segurança da Conta</h2>
+            <p>Para utilizar as funcionalidades do AdvogAI, o usuário deve realizar um cadastro fornecendo dados verídicos e atualizados. A segurança das credenciais de acesso (senhas) é de responsabilidade exclusiva do usuário. Recomendamos fortemente o uso de gerenciadores de senhas seguros e a não partilha de acessos.</p>
+
+            <h2>4. Uso Permitido e Conduta do Usuário</h2>
+            <p>Ao utilizar a plataforma, você se compromete a <strong>não</strong>:</p>
+            <ul>
+                <li>Inserir dados que violem o segredo de justiça de processos sem a devida anonimização prévia.</li>
+                <li>Utilizar a ferramenta para fins ilícitos, fraudulentos ou que violem o Código de Ética e Disciplina da OAB.</li>
+                <li>Praticar engenharia reversa, extração massiva de dados (<em>scraping</em>) ou tentativas de burlar a segurança da API do AdvogAI.</li>
+            </ul>
+
+            <h2>5. Propriedade Intelectual</h2>
+            <ul>
+                <li><strong>Da Plataforma:</strong> Todo o código-fonte, design, marcas, logotipos e algoritmos do AdvogAI são de propriedade exclusiva da nossa empresa ou de nossos licenciadores.</li>
+                <li><strong>Dos Outputs (Resultados):</strong> Os textos, petições e documentos gerados customizados pela IA a partir dos comandos (<em>prompts</em>) do usuário pertencem ao usuário, que possui plena licença comercial para utilizá-los em sua prática profissional.</li>
+            </ul>
+
+            <h2>6. Limitação de Responsabilidade</h2>
+            <p>Em nenhuma circunstância o AdvogAI será responsável por quaisquer danos indiretos, incidentais, punitivos ou lucros cessantes decorrentes de decisões judiciais desfavoráveis, perda de prazos processuais ou erros interpretativos cometidos pelo uso das minutas geradas pela IA.</p>
+
+            <h2>7. Alterações nos Termos</h2>
+            <p>Reservamo-nos o direito de modificar estes termos a qualquer momento. Notificaremos os usuários sobre alterações materiais através da plataforma ou por e-mail. O uso continuado após as alterações constitui aceitação dos novos termos.</p>
+        </main>
+
+        <!-- ABA: TRANSPARÊNCIA DE DADOS -->
+        <main id="transparencia" class="content-section">
+            <h1>Política de Transparência de Dados</h1>
+            <div class="meta-date">Última atualização: 20 de maio de 2026</div>
+
+            <p>No <strong>AdvogAI</strong>, entendemos que o sigilo profissional e a privacidade são pilares inegociáveis no ecossistema jurídico. Esta Política de Transparência explica detalhadamente como coletamos, processamos, protegemos e compartilhamos os seus dados e os dados dos seus clientes.</p>
+
+            <h2>1. Princípios de Privacidade</h2>
+            <p>Atuamos em conformidade estrita com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e com as diretrizes de sigilo do Estatuto da Advocacia. Nossos pilares são:</p>
+            <ul>
+                <li><strong>Minimização:</strong> Coletamos apenas o estritamente necessário para o funcionamento do serviço.</li>
+                <li><strong>Segurança:</strong> Tratamos os dados jurídicos com criptografia de ponta a ponta.</li>
+                <li><strong>Privacidade por Padrão (Privacy by Design):</strong> Nossos sistemas são arquitetados para proteger a identidade dos titulares.</li>
+            </ul>
+
+            <h2>2. Quais dados processamos e como os utilizamos?</h2>
+            <ul>
+                <li><strong>Dados de Cadastro:</strong> Nome, e-mail, CPF/CNPJ e número de inscrição na OAB (se aplicável), utilizados para gestão de conta e faturamento.</li>
+                <li><strong>Prompts e Documentos Inseridos:</strong> Textos, fatos e arquivos que você envia para a IA analisar. São processados temporariamente para gerar a resposta jurídica solicitada. O usuário possui o controle de apagar o histórico de suas interações a qualquer momento em seu painel.</li>
+            </ul>
+
+            <h2>3. Política de Treinamento da Inteligência Artificial</h2>
+            <div class="highlight-box" style="background-color: #f0fdf4; border-left-color: #16a34a;">
+                <p style="color: #166534;"><strong>Compromisso de Não Utilização:</strong> Para garantir o absoluto sigilo, os dados de prompts, documentos anexados e textos gerados por nossos usuários corporativos/premium NÃO são utilizados para treinar, reter ou aperfeiçoar modelos públicos de IA.</p>
+            </div>
+            <p>O processamento de linguagem natural é feito através de APIs comerciais seguras que garantem em contrato a não retenção de dados para fins de treinamento de terceiros.</p>
+
+            <h2>4. Segurança da Informação</h2>
+            <p>Implementamos medidas técnicas avançadas de segurança, incluindo:</p>
+            <ul>
+                <li>Criptografia de dados em repouso e em trânsito (SSL/TLS).</li>
+                <li>Armazenamento em servidores de nuvem de alta confiabilidade com certificações internacionais de segurança (ISO 27001, SOC 2).</li>
+                <li>Auditorias periódicas de vulnerabilidade em nossos sistemas e APIs.</li>
+            </ul>
+
+            <h2>5. Compartilhamento de Dados com Terceiros</h2>
+            <p>O AdvogAI não vende, aluga ou comercializa nenhuma base de dados jurídica ou pessoal. O compartilhamento ocorre estritamente com provedores de infraestrutura de nuvem/IA sob rígidos contratos de privacidade, processadores de pagamento e autoridades judiciais (estritamente mediante ordem judicial fundamentada).</p>
+
+            <h2>6. Direitos do Usuário (Titular dos Dados)</h2>
+            <p>Você, como titular dos dados, possui total controle sobre suas informações e pode, a qualquer momento, através das configurações ou do nosso canal de suporte:</p>
+            <ul>
+                <li>Confirmar a existência de tratamento e acessar seus dados.</li>
+                <li>Corrigir dados incompletos ou desatualizados.</li>
+                <li>Solicitar a <strong>exclusão definitiva</strong> do seu histórico de interações e dados cadastrais (direito ao esquecimento).</li>
+            </ul>
+
+            <h2>7. Contato do Encarregado de Proteção de Dados (DPO)</h2>
+            <p>Para dúvidas sobre como seus dados são tratados ou para exercer seus direitos, entre em contato com nosso Encarregado de Proteção de Dados através do e-mail: <strong>privacidade@advogai.com.br</strong>.</p>
+        </main>
+
+        <footer>
+            &copy; 2026 AdvogAI. Todos os direitos reservados.
+        </footer>
+    </div>
+
+    <script>
+        function switchTab(event, tabId) {
+            // Remove a classe 'active' de todos os links da aba
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => link.classList.remove('active'));
+
+            // Remove a classe 'active' de todas as seções de conteúdo
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Adiciona a classe 'active' no link clicado e na seção correspondente
+            event.target.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
