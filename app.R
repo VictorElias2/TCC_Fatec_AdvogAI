@@ -8,6 +8,7 @@ library(readr)
 library(markdown)  # Para converter Markdown em HTML
 
 ui <- dashboardPage(
+  title = "AdvogAI",
   skin = "black",
   dashboardHeader(title = img(src = "logo.png", width = "120px", height = "auto"), 
                   dropdownMenu(type = NULL, badgeStatus = NULL,
