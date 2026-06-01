@@ -19,17 +19,23 @@ ui <- dashboardPage(
                                ))),
   dashboardSidebar(disable = F, collapsed = T,
                    sidebarMenu(
-                     menuItem("Chat", tabName = "home", icon = icon("comment")),
-                     menuItem("Nossos Advogados", tabName = "advogadosLicenciados", icon = icon("suitcase"))
+                     menuItem("Chat", tabName = "chat", icon = icon("comment")),
+                     menuItem("Nossos Advogados", tabName = "advogados", icon = icon("suitcase"))
                      )
                    ),
   dashboardBody(
-    useShinyjs(), # Inicia o shinyjs para usar delay de mensagens
-    tags$head(
-      includeCSS("www/menu.css"),
+    
+    tabItems(
       
-      # JS para rolar o chat para baixo
-      tags$script(HTML("
+      # Seção Chat
+      tabItem(
+        tabName = "chat",
+        useShinyjs(), # Inicia o shinyjs para usar delay de mensagens
+        tags$head(
+          includeCSS("www/menu.css"),
+          
+          # JS para rolar o chat para baixo
+          tags$script(HTML("
         function scrollChatToBottom() {
           var chatContainer = document.querySelector('#chatResult');
           if (chatContainer) {
@@ -51,20 +57,28 @@ ui <- dashboardPage(
           }
         });
       "))
-    ),
-    
-    # Área do chat com scroll
-    tags$div(id = "chatResult",
-             uiOutput("chat")
-    ),
-    
-    tags$div(id = "inline-chat",
-             style = "margin-top: 15px;",
-             textAreaInput("inputChat", placeholder = "Pergunte aqui", width = "92%", 
-                           label = NULL, resize = "none", autoresize = T),
-             actionButton("botaoEnviar", label = "Enviar")
-    ),
-    tags$footer(id = "footer", p("O AdvogAI é uma Inteligência Artificial. Ela pode cometer erros."))
+        ),
+        
+        # Área do chat com scroll
+        tags$div(id = "chatResult",
+                 uiOutput("chat")
+        ),
+        
+        tags$div(id = "inline-chat",
+                 style = "margin-top: 15px;",
+                 textAreaInput("inputChat", placeholder = "Pergunte aqui", width = "92%", 
+                               label = NULL, resize = "none", autoresize = T),
+                 actionButton("botaoEnviar", label = "Enviar")
+        ),
+        tags$footer(id = "footer", p("O AdvogAI é uma Inteligência Artificial. Ela pode cometer erros."))
+      ),
+      
+      # Seção Advogados Licenciados
+      tabItem(
+        tabName = "advogados",
+        p("Tabela de advogados.")
+      )
+    )
   )
 )
 
