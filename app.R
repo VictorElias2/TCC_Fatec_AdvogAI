@@ -77,7 +77,7 @@ server <- function(input, output, session){
     Sempre que possível mostre leis, explique de uma forma clara e leiga o assunto para a 
     pessoa para ela sair sem dúvidas e no final, mostrar a ela quais seriam os próximos passos 
     vigentes sobre a questão que foi abordada.",
-    model = "deepseek-chat",
+    model = "deepseek-v4-pro",
     api_key = read_lines("deepseekAPI.txt")
   )
   
